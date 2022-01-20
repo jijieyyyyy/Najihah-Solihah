@@ -65,7 +65,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         };
         snow();
         </script>
-        
+
 <body class="w3-light-gray w3-content" style="max-width:1600px">
 <body><body background= "images/2.jpg" style="max-width:1600px">
   <audio controls autoplay>
@@ -78,8 +78,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <p align="center"><img src="images/jie.jpg" style="width:80%;" class="w3-round"><br><br></p>
-    <h4><b>Nur Najihah Solihah Webpage</b></h4>
-    <p class="w3-text-black">by Najihah Solihah © 2021 </p>
+    <h4><b><p align="center"class="w3-black">Nur Najihah Solihah Webpage</b></h4>
+    <p class="w3-text-black">by Najihah Solihah © 2022 </p>
   </div>
   <div class="w3-bar-block">
     
@@ -118,14 +118,103 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><font face="Verdana" color="black"><b> Personal Summary </b></font></h4>
-    <p>A committed and creative student programmer and software engineer with experience building innovative software ideas I am also proficient in Excel, Microsoft, and editing. I also enjoy reading and watching dramas that are mainly about education, such as medical, political, and historical dramas, to broaden my general knowledge and to give me time to myself.</p>
+    <p>A committed and creative student programmer and software engineer with experience building innovative software ideas I am also proficient in Excel, Microsoft, and editing. I also enjoy reading and watching dramas that are mainly about education, such as medical, political, and historical dramas, to broaden my general knowledge and to give me time to myself.I have in-depth knowledge of a wide range of marketing programmes, as well as great attention to detail and communication skills.
+    <p>I enjoy reading novels that cover a variety of topics, including current events and the economics. Reading allows me to expand my general knowledge while also giving me the opportunity to spend some time alone. In addition, I am enthusiastic in expressing fresh ideas and developing relationships with others. I am an excellent leader and team player in any business and can readily adapt to varied situations such as working under pressure.</p></div>
 
-    
-    
-    
-  
-  
- 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/jie1.jpg" alt="Jijiey" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/tae.jpg" alt="Jijiey" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/bunga.jpg" alt="Jijiey" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/jie2.jpg" alt="School" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>   
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-brown">
@@ -142,7 +231,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <li class="w3-padding-16">
           <img src="images/facebook.jpg" class="w3-left w3-margin-right" style="width:50px">
           
-          <span class="w3-tag w3-black w3-margin-bottom"><a href="https://www.facebook.com/gucci1010"> Najihah Solihah </span>
+          <span class="w3-tag w3-brown w3-margin-bottom"><a href="https://www.facebook.com/gucci1010"> Najihah Solihah </span>
         </li>
          <h3>Instagram</h3>
         <li class="w3-padding-15">
@@ -152,18 +241,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </li> 
       </ul>
     </div>
+        <h3>Twitter</h3>
+      <li class="w3-padding-15">
+        <img src="images/twitter.png" class="w3-left w3-margin-right" style="width:50px">
 
+        <span class="w3-tag w3-brown w3-margin-bottom"><a href="https://www.twitter.com/jijieyyyyy"> @jijieyyyyy</span>
+      </a></span></li></a>
     <div class="w3-third">
+    <ul class="w3-ul w3-hoverable">
       <h3>Email</h3>
       <li class="w3-padding-16">
         <img src="images/email.png" class="w3-left w3-margin-right" style="width:50px">
           
-        <span class="w3-tag w3-black w3-margin-bottom"> solihahnajihah@gmail.com</span>
-        
+        <span class="w3-tag w3-brown w3-margin-bottom"> solihahnajihah@gmail.com</span>
+  </li></ul>     
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-22">Copyright by Nur Najihah Solihah © 2021 </div>
+  <div class="w3-black w3-center w3-padding-22">Copyright by Nur Najihah Solihah © 2022 </div>
 
 <!-- End page content -->
 </div>
